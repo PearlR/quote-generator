@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Nanami';
+  src: url('Nanami.eot');
+  src: url('Nanami.woff2') format('woff2'),
+       url('Nanami.woff') format('woff'),
+       url('Nanami.ttf') format('truetype'),
+       url('Nanami.svg#Nanami') format('svg'),
+       url('Nanami.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

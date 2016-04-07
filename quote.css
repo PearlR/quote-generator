@@ -1,16 +1,29 @@
+@font-face {
+  font-family: 'Nanami';
+  src: url('fonts/Nanami.eot');
+  src: url('fonts/Nanami.woff2') format('woff2'),
+       url('fonts/Nanami.woff') format('woff'),
+       url('fonts/Nanami.ttf') format('truetype'),
+       url('fonts/Nanami.svg#Nanami') format('svg'),
+       url('fonts/Nanami.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 p {
   color: white;
+  font-family: 'Nanami';
+  font-size: 20pt;
 }
 
 .main {
   position: fixed;
   background-color: darkblue;
-  height: 25%;
   width: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 2%;
+  padding: 4%;
 }
 
 #quote-box {
@@ -22,10 +35,12 @@ p {
 }
 
 .quote-button {
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  transform: translate(-120%, -120%);
   float: right;
   color: white;
+  margin-bottom: 0;
+}
+
+.quote-button:hover, .quote-button:focus {
+    color: darkblue;
+    background-color: white;
 }
