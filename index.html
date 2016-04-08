@@ -22,19 +22,21 @@
 
   <div class="main">
     <div id="quote-box">
-      <p>"Quote"</p>
+      <p>"Our background image is up there with Van Gogh."</p>
     </div>
     <div id="author-box">
-      <p>- Author</p>
+      <p>- Pearl & Broc</p>
     </div>
-    <a href=”http://twitter.com/home/?status=Twitter is like the lunch meeting with potential clients before you do the pitch. via @blogtyrant”>tweet this </a>
-    <button class="quote-button" onclick="makeQuoteRequest()">Quote</button>
-  </div>
-  
+    <a id="tweet-button" href="https://twitter.com/share" class="twitter-share-button fa fa-twitter" data-text="" data-size="large" data-hashtags="quotes" onclick="prepareTweet()"> Tweet This Quote</a>
+    <button class="quote-button" onclick="makeQuoteRequest()">New Quote</button>
+  </div>  
 </div>
 
 <script src="quoteList.js" type="text/javascript" charset="utf-8"></script>
 <script src="quote.js" type="text/javascript" charset="utf-8"></script>
+<!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
 
 </body>
 </html>
+
+
