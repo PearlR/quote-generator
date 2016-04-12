@@ -39,5 +39,5 @@ function fallBackQuote () {
 function prepareTweet () {
   var quoteLink = encodeURIComponent(document.getElementById('quote-box').innerHTML.replace(/<\/?p>/g, ''))
   var authorLink = encodeURIComponent(document.getElementById('author-box').innerHTML.replace(/<\/?p>/g, ''))
-  document.getElementById('tweet-button').href = 'https://twitter.com/intent/tweet?text=' + quoteLink + authorLink
+  document.getElementById('tweet-button').href = 'https://twitter.com/intent/tweet?text=' + quoteLink + ' ' + authorLink
 }
