@@ -1,5 +1,6 @@
-
 var httpRequest
+
+prepareTweet()
 
 function makeQuoteRequest () {
   httpRequest = new XMLHttpRequest()
@@ -21,6 +22,7 @@ function updateQuote () {
       var response = JSON.parse(httpRequest.responseText)
       document.getElementById('quote-box').innerHTML = '<p>"' + response.quote + '"</p>'
       document.getElementById('author-box').innerHTML = '<p>- ' + response.author + '</p>'
+      prepareTweet()
     } else {
       fallBackQuote()
     }
@@ -31,12 +33,11 @@ function fallBackQuote () {
   var quoteObject = quoteArray[Math.floor(Math.random() * quoteArray.length)]
   document.getElementById('quote-box').innerHTML = '<p>' + quoteObject.quote + '</p>'
   document.getElementById('author-box').innerHTML = '<p> - ' + quoteObject.author + '</p>'
+  prepareTweet()
 }
 
-
-
 function prepareTweet () {
-  var quoteTweet = document.getElementById('quote-box').innerHTML.replace(/<p>|<\/p>/, '')
-  var authorTweet = document.getElementById('author-box').innerHTML.replace(/<p>|<\/p>/, '')
-  document.getElementById('tweet-button').setAttribute('data-text', quoteTweet + ' ' + authorTweet)
+  var quoteLink = encodeURIComponent(document.getElementById('quote-box').innerHTML.replace(/<\/?p>/g, ''))
+  var authorLink = encodeURIComponent(document.getElementById('author-box').innerHTML.replace(/<\/?p>/g, ''))
+  document.getElementById('tweet-button').href = 'https://twitter.com/intent/tweet?text=' + quoteLink + authorLink
 }

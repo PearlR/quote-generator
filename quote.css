@@ -26,7 +26,7 @@ p {
 a {
   color: white;
   text-decoration: none;
-  text-transform: capitalize;
+
 }
 
 .main {
@@ -39,22 +39,24 @@ a {
   padding: 4%;
 }
 
-#quote-box {
-
-}
-
 #author-box {
   text-align: right;
 }
 
-.quote-button {
-  float: right;
+.button {
   color: white;
   margin-bottom: 0;
 }
 
-.quote-button:hover, .quote-button:focus {
+.button:hover, .button:focus {
     color: darkblue;
     background-color: white;
 }
 
+#quote-button {
+  float: right;
+}
+
+#tweet-button {
+  float: left;
+}

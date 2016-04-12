@@ -13,9 +13,10 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href=".\fonts\fonts.css">
   <link rel="stylesheet" href="quote.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--   <link rel="stylesheet" href=".\fonts\fonts.css"> -->
+
 
 </head>
 <body>
@@ -25,17 +26,15 @@
       <p>"Our background image is up there with Van Gogh."</p>
     </div>
     <div id="author-box">
-      <p>- Pearl & Broc</p>
+      <p>- Pearl &amp; Broc</p>
     </div>
-    <a id="tweet-button" href="https://twitter.com/share" class="twitter-share-button fa fa-twitter" data-text="" data-size="large" data-hashtags="quotes" onclick="prepareTweet()"> Tweet This Quote</a>
-    <button class="quote-button" onclick="makeQuoteRequest()">New Quote</button>
+    <button id="quote-button" class="button" onclick="makeQuoteRequest()">New Quote</button>
+    <a id="tweet-button" href="" target="_blank"><button class="button"><span class="fa fa-twitter"></span> Tweet</button></a>
   </div>  
 </div>
 
 <script src="quoteList.js" type="text/javascript" charset="utf-8"></script>
 <script src="quote.js" type="text/javascript" charset="utf-8"></script>
-<!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
-
 </body>
 </html>
 
