@@ -13,28 +13,29 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href=".\fonts\fonts.css">
   <link rel="stylesheet" href="quote.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--   <link rel="stylesheet" href=".\fonts\fonts.css"> -->
+
 
 </head>
 <body>
 
   <div class="main">
     <div id="quote-box">
-      <p>"Quote"</p>
+      <p>"Our background image is up there with Van Gogh."</p>
     </div>
     <div id="author-box">
-      <p>- Author</p>
+      <p>- Pearl &amp; Broc</p>
     </div>
-    <a href=”http://twitter.com/home/?status=Twitter is like the lunch meeting with potential clients before you do the pitch. via @blogtyrant”>tweet this </a>
-    <button class="quote-button" onclick="makeQuoteRequest()">Quote</button>
-  </div>
-  
+    <button id="quote-button" class="button" onclick="makeQuoteRequest()">New Quote</button>
+    <a id="tweet-button" href="" target="_blank"><button class="button"><span class="fa fa-twitter"></span> Tweet</button></a>
+  </div>  
 </div>
 
 <script src="quoteList.js" type="text/javascript" charset="utf-8"></script>
 <script src="quote.js" type="text/javascript" charset="utf-8"></script>
-
 </body>
 </html>
+
+
